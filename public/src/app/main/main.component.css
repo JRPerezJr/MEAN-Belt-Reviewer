@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bg {
+    margin-top: -2rem;
+    background-image: url('./img/bmw2.jpg');
+
+    
+    height: 100%; 
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    margin-right: 108rem;
+    border: 0;
+    margin-bottom: 29rem;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* .box{
+    height: 60rem;
+} */

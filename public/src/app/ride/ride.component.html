@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+    <body class="bg">
+      <div class="box">
+        <div class="box1">
+          <!-- {{ride | json }} used for diagnosis of ride object -->
+            <div *ngIf="ride" class="container left-align white-text">
+              <h2>Ride Details</h2>
+              <h3>Driver: {{ride.driver}} </h3>
+              <h3 >Occupants:{{ride.riders.length}}/{{ride.cap}}</h3>
+              <h5 class="red-text" *ngFor="let e of errors" >{{e}} </h5>
+              <h4 *ngFor="let o of ride.riders">{{o.name}} <button class="waves-effect waves-light btn" (click)="deleteRider(o)">Drop Rider</button></h4>
+              <div class="row">
+                  <form  *ngIf="ride.riders.length < ride.cap" (submit)="addRider()" class="col s12">
+                    <!-- {{ newRide | json }} -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                          <i class="material-icons prefix">event_seat</i>
+                          <input  type="text" name="newRider.name" [(ngModel)]="newRider.name" class="validate">
+                          <label class="active"  for="Cap">Join ride</label>
+                        </div>
+                    </div>
+                    <input class="waves-effect waves-light btn-large" type="submit" value="Ride with me">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body class="bg">
+  <div class="box">
+    <div class="container left-align">
+      <div>
+        <h3>Add Ride</h3>
+        <p class="red-text" *ngFor="let e of errors" >{{e}} </p>
+      </div>
+      <div class="row">
+          <form (submit)="addRide()" class="col s12">
+            <!-- {{ newRide | json }} -->
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">assignment_ind</i>
+                <input  type="text" name="newRide.driver" [(ngModel)]="newRide.driver" class="validate">
+                <label class="active" for="Driver">Driver</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">explore</i>
+                <input  type="text" name="newRide.dest" [(ngModel)]="newRide.dest" class="validate">
+                <label class="active" for="Dest">Destination</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">event_seat</i>
+                <input  type="number" name="newRide.cap" [(ngModel)]="newRide.cap" class="validate">
+                <label class="active"  for="Cap">Seats</label>
+              </div>
+            </div>
+            <input class="waves-effect waves-light btn-large" type="submit" value="Let's Roll">
+          </form>
+        </div>
+    
+    </div>
+
+  </div>
+  
+</body>
+
+</html>

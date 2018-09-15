@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bg {
+    margin-top: -2rem;
+    background-image: url('./img/bmw2.jpg');
+
+    
+    height: 100%; 
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    margin-right: 108rem;
+    border: 0;
+    margin-bottom: 29rem;
+}
+.box{
+    height: 60rem;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    top: 14rem;
+    left: -19rem;
+}
