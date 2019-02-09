@@ -14,6 +14,6 @@ require('./server/config/mongoose');
 require('./server/config/routes')(app);
 
 
-app.listen(8000, function() {
-    console.log("Chilling like a Villain on port 8000");
+app.listen(9000, function() {
+    console.log("Chilling like a Villain on port 9000");
 });
