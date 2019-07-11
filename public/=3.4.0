@@ -1,0 +1,18 @@
+
+> fsevents@1.2.9 install /Users/perezjuan/Desktop/MEAN/Angular/Belt-Reviewer/public/node_modules/fsevents
+> node install
+
+Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/Users/perezjuan/Desktop/MEAN/Angular/Belt-Reviewer/public/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node --module_name=fse --module_path=/Users/perezjuan/Desktop/MEAN/Angular/Belt-Reviewer/public/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64 --napi_version=3 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v64' (1)
+
+> node-sass@4.12.0 install /Users/perezjuan/Desktop/MEAN/Angular/Belt-Reviewer/public/node_modules/node-sass
+> node scripts/install.js
+
+
+> node-sass@4.12.0 postinstall /Users/perezjuan/Desktop/MEAN/Angular/Belt-Reviewer/public/node_modules/node-sass
+> node scripts/build.js
+
+Building: /usr/local/bin/node /Users/perezjuan/Desktop/MEAN/Angular/Belt-Reviewer/public/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
++ typescript@3.5.3
+updated 1 package and audited 40817 packages in 9.041s
+found 0 vulnerabilities
+
